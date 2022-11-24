@@ -5,6 +5,22 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FitnesClub", "FitnesClub\FitnesClub.csproj", "{09F75AEF-AF66-4270-98EA-C8FDDA2A65E3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{9310EBD8-C641-4BC4-A837-A859C6BD3A1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{10C1DC9C-4769-4CD9-BFFF-E444F5214F38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{0043F845-60AA-4B11-83DD-7DD14307F931}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnesClub.Domain", "FitnesClub.Domain\FitnesClub.Domain.csproj", "{A94D9D0B-2166-43AD-B432-DE0E3A803830}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnesClub.Abstraction", "FitnesClub.Abstraction\FitnesClub.Abstraction.csproj", "{6F0AD8A6-8CF3-4D3D-9892-DBF9FFDBF816}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnesClub.Migration", "FitnesClub.Migration\FitnesClub.Migration.csproj", "{AF033CD8-C27B-42DB-AC0C-8EC458DC9313}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnesClub.Data", "FitnesClub.Data\FitnesClub.Data.csproj", "{96488540-5726-41FE-8DC0-A1A271B0B8D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnesClub.Features", "FitnesClub.Features\FitnesClub.Features.csproj", "{E80ABDE4-8276-440B-A571-C41AAE765D73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +31,37 @@ Global
 		{09F75AEF-AF66-4270-98EA-C8FDDA2A65E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09F75AEF-AF66-4270-98EA-C8FDDA2A65E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09F75AEF-AF66-4270-98EA-C8FDDA2A65E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A94D9D0B-2166-43AD-B432-DE0E3A803830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A94D9D0B-2166-43AD-B432-DE0E3A803830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A94D9D0B-2166-43AD-B432-DE0E3A803830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A94D9D0B-2166-43AD-B432-DE0E3A803830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F0AD8A6-8CF3-4D3D-9892-DBF9FFDBF816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F0AD8A6-8CF3-4D3D-9892-DBF9FFDBF816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F0AD8A6-8CF3-4D3D-9892-DBF9FFDBF816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F0AD8A6-8CF3-4D3D-9892-DBF9FFDBF816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF033CD8-C27B-42DB-AC0C-8EC458DC9313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF033CD8-C27B-42DB-AC0C-8EC458DC9313}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF033CD8-C27B-42DB-AC0C-8EC458DC9313}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF033CD8-C27B-42DB-AC0C-8EC458DC9313}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96488540-5726-41FE-8DC0-A1A271B0B8D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96488540-5726-41FE-8DC0-A1A271B0B8D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96488540-5726-41FE-8DC0-A1A271B0B8D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96488540-5726-41FE-8DC0-A1A271B0B8D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E80ABDE4-8276-440B-A571-C41AAE765D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E80ABDE4-8276-440B-A571-C41AAE765D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E80ABDE4-8276-440B-A571-C41AAE765D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E80ABDE4-8276-440B-A571-C41AAE765D73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{09F75AEF-AF66-4270-98EA-C8FDDA2A65E3} = {0043F845-60AA-4B11-83DD-7DD14307F931}
+		{A94D9D0B-2166-43AD-B432-DE0E3A803830} = {9310EBD8-C641-4BC4-A837-A859C6BD3A1A}
+		{6F0AD8A6-8CF3-4D3D-9892-DBF9FFDBF816} = {9310EBD8-C641-4BC4-A837-A859C6BD3A1A}
+		{AF033CD8-C27B-42DB-AC0C-8EC458DC9313} = {10C1DC9C-4769-4CD9-BFFF-E444F5214F38}
+		{96488540-5726-41FE-8DC0-A1A271B0B8D8} = {10C1DC9C-4769-4CD9-BFFF-E444F5214F38}
+		{E80ABDE4-8276-440B-A571-C41AAE765D73} = {10C1DC9C-4769-4CD9-BFFF-E444F5214F38}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {142DDF99-D239-45AD-81ED-EEF969BD6DDA}
